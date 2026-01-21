@@ -89,10 +89,18 @@ void two_mul(int a[],int b[],int c[]){
     }
     
     for(int i=0;i<LEN-1;i++){
-        
         c[i+1]+=c[i]/10;
         c[i]%=10;
-
+    }
+}
+//完全模拟
+void int_div(int *a,int b,int *c){
+    initialize(c);
+    int remainder=0;
+    for(int i=LEN-1;i>=0;i--){
+        remainder=remainder*10+a[i];
+        c[i]=remainder/b;
+        remainder=remainder%b;
     }
 }
 

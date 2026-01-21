@@ -22,5 +22,13 @@
         "utility": "cpp",
         "new": "cpp"
     },
-    "C_Cpp.errorSquiggles": "enabled"
+    "C_Cpp.errorSquiggles": "enabled",
+    "java.jdt.ls.java.home": "D:\\java",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "D:\\java",
+            "default": true
+        }
+    ]
 }
